@@ -1,0 +1,23 @@
+{
+  "welcome": "Welcome to my portfolio",
+  "about": "About me",
+  "contact": "Contact",
+  "footer": {
+    "brand": "Eric Phan Portfolio",
+    "nav": {
+      "features": "Projects",
+      "solution": "Skills",
+      "customers": "Clients",
+      "pricing": "Services",
+      "help": "Contact",
+      "about": "About Me"
+    },
+    "copyright": "All rights reserved."
+  },
+  "FooterContact": {
+    "title": "Contact Us",
+    "address": "Thu Duc City, Ho Chi Minh City, Vietnam",
+    "email": "hphann.205@gmal.com",
+    "phone": "0354019580"
+  }
+}

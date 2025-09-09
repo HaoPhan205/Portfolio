@@ -1,0 +1,23 @@
+{
+  "welcome": "Chào mừng đến với portfolio của tôi",
+  "about": "Giới thiệu",
+  "contact": "Liên hệ",
+  "footer": {
+    "brand": "Portfolio Eric Phan",
+    "nav": {
+      "features": "Dự án",
+      "solution": "Kỹ năng",
+      "customers": "Khách hàng",
+      "pricing": "Dịch vụ",
+      "help": "Liên hệ",
+      "about": "Về tôi"
+    },
+    "copyright": "Bảo lưu mọi quyền."
+  },
+  "FooterContact": {
+    "title": "Liên hệ",
+    "address": "Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam",
+    "email": "hphann.205@gmal.com",
+    "phone": "0354019580"
+  }
+}
