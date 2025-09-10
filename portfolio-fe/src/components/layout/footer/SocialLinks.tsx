@@ -12,25 +12,26 @@ const SocialLinks = () => {
     },
     // { src: InstagramIcon, alt: "Instagram", href: "https://instagram.com" },
   ];
+
   return (
     <ul className="flex space-x-4">
       {links.map(({ src, alt, href }) => (
-        <a
-          key={alt}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
-        >
-          {" "}
-          <Image
-            src={src}
-            alt={alt}
-            width={28}
-            height={28}
-            className="opacity-70 hover:opacity-100 dark:invert"
-          />
-        </a>
+        <li key={alt}>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-full"
+          >
+            <Image
+              src={src}
+              alt={alt}
+              width={28}
+              height={28}
+              className="block"
+            />
+          </a>
+        </li>
       ))}
     </ul>
   );

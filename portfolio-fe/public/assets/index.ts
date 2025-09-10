@@ -1,5 +1,4 @@
-import GithubIcon from "./icons/github_icon.png";
-import FacebookIcon from "./icons/facebook_icon.png";
-import InstagramIcon from "./icons/Instagram_icon.png";
-
-export { GithubIcon, FacebookIcon, InstagramIcon };
+export const GithubIcon = "/assets/icons/github_icon.png";
+export const FacebookIcon = "/assets/icons/facebook_icon.png";
+export const InstagramIcon = "/assets/icons/Instagram_icon.png";
+export const AnimatedGif = "/assets/icons/programmer.gif";

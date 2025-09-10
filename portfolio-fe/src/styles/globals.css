@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  visibility: hidden;
+}
+
+html.ready {
+  visibility: visible;
+  transition: visibility 0s, opacity 0.2s ease;
+}
