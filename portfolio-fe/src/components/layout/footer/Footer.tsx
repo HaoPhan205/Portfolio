@@ -6,7 +6,6 @@ import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { ClientOnly } from "@/components/shared/ClientOnly";
 import { ModeToggle } from "@/components/shared/ThemeToggle";
 import GifImage from "@/components/shared/GifImage";
-import { AnimatedGif } from "public/assets";
 
 function Footer() {
   const t = useTranslations("footer");
@@ -25,7 +24,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
         <div className="mb-6 flex items-center justify-center ">
           <GifImage
-            src={AnimatedGif}
+            src="/assets/icons/programmer.gif"
             alt="Animated GIF"
             size={60}
             rounded
@@ -52,14 +51,13 @@ function Footer() {
           </ul>
         </nav>
         <div className="mb-6 flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+          <div className="my-6 flex  flex-wrap justify-center gap-3 sm:gap-4 text-sm">
+            <SocialLinks />
+          </div>
           <LanguageSwitcher />
           <ClientOnly>
             <ModeToggle />
           </ClientOnly>
-        </div>
-
-        <div className="my-6 flex  flex-wrap justify-center gap-3 sm:gap-4 text-sm">
-          <SocialLinks />
         </div>
 
         <p className="text-center text-xs sm:text-sm text-textSecondary dark:text-textDarkSecondary mt-4 sm:mt-6">

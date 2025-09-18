@@ -8,10 +8,21 @@ import { cookies } from "next/headers";
 import { Locale, LocaleProvider } from "@/context/LocaleContext";
 import { HydrationFixer } from "@/components/shared/HydrationFixer";
 import Header from "@/components/layout/header/Header";
-import GridBackgroundView, {
-  GridBackground,
-} from "@/components/shared/GridBackgroundView";
+import { GridBackground } from "@/components/shared/GridBackgroundView";
 import ChatWidget from "@/components/chat/ChatWidget";
+
+import { Inter, Poppins } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
   title: "Eric Phan Developer",
@@ -31,8 +42,12 @@ export default async function RootLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className="relative bg-slate-950 text-white overflow-hidden">
+    <html
+      lang={locale}
+      suppressHydrationWarning
+      className={`${inter.variable} ${poppins.variable}`}
+    >
+      <body className="relative bg-slate-950 text-white overflow-x-hidden">
         <HydrationFixer />
         <GridBackground />
         <ThemeProviderWrapper>
@@ -40,7 +55,7 @@ export default async function RootLayout({
             <NextIntlClientProvider messages={messages} locale={locale}>
               <div className="relative z-10 flex flex-col min-h-screen">
                 <Header />
-                <main className="flex-1  p-6 pt-16">{children}</main>
+                <main className="flex-1 p-6 pt-16">{children}</main>
                 <Footer />
 
                 <div className="fixed bottom-4 right-4 z-50">

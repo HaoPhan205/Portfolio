@@ -39,7 +39,7 @@ export const GridBackground = () => {
         }px)`,
       }}
     >
-      <div className="absolute top-1/2 left-1/2 w-[60vmin] h-[60vmin] bg-cyan-500/20 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute top-1/2 left-1/2 w-[60vmin] h-[60vmin] bg-cyan-500/20 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2 overflow-hidden" />
       <style>{`
       @keyframes moveGrid {
         0% { background-position: 0 0; }
@@ -52,7 +52,7 @@ export const GridBackground = () => {
 
 export default function GridBackgroundView() {
   return (
-    <div className="relative w-full h-screen bg-slate-950 overflow-hidden">
+    <div className="relative w-full min-h-screen bg-slate-950 overflow-hidden">
       <GridBackground />
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center px-4">

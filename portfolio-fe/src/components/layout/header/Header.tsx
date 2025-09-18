@@ -2,10 +2,9 @@
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import GifImage from "@/components/shared/GifImage";
-import { AnimatedGif } from "public/assets";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { ClientOnly } from "@/components/shared/ClientOnly";
-import { ModeToggle } from "@/components/shared/ThemeToggle";
+import { ModeToggle } from "@/components/shared/ModeToggle";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +33,7 @@ export default function Header() {
         <div className="flex items-center ">
           {" "}
           <GifImage
-            src={AnimatedGif}
+            src="/assets/icons/programmer.gif"
             alt="Animated GIF"
             size={40}
             rounded

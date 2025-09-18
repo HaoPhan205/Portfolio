@@ -15,6 +15,10 @@ import {
 export function ModeToggle() {
   const { setTheme } = useTheme();
 
+  // const toogleTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  // };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -30,8 +34,8 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent
-        align="end"
-        className="bg-lightSecondary dark:bg-darkSecondary text-textPrimary dark:text-textDarkPrimary border border-gray-300 dark:border-gray-600 shadow-lg"
+        align="start"
+        className="border border-gray-300 dark:border-gray-600 shadow-lg"
       >
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light

@@ -1,12 +1,15 @@
 import Image from "next/image";
-import { FacebookIcon, GithubIcon, InstagramIcon } from "public/assets";
 import React from "react";
 
 const SocialLinks = () => {
   const links = [
-    { src: GithubIcon, alt: "Github", href: "https://github.com/HaoPhan205" },
     {
-      src: FacebookIcon,
+      src: "/assets/icons/github_icon.png",
+      alt: "Github",
+      href: "https://github.com/HaoPhan205",
+    },
+    {
+      src: "/assets/icons/facebook_icon.png",
       alt: "Facebook",
       href: "https://web.facebook.com/EricPhannn",
     },

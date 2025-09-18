@@ -129,3 +129,16 @@ html.ready {
   visibility: visible;
   transition: visibility 0s, opacity 0.2s ease;
 }
+
+
+html,
+body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}

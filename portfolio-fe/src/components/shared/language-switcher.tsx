@@ -1,14 +1,10 @@
 "use client";
 
+import React from "react";
 import { useLocale } from "@/context/LocaleContext";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "../ui/select";
 
-interface Props {
-  value: "vi" | "en";
-  onChange: (value: "vi" | "en") => void;
-}
-
-export function LanguageSwitcher() {
+export const LanguageSwitcher = React.memo(() => {
   const { locale, setLocale } = useLocale();
 
   const handleChange = async (val: string) => {
@@ -34,4 +30,6 @@ export function LanguageSwitcher() {
       </SelectContent>
     </Select>
   );
-}
+});
+
+LanguageSwitcher.displayName = "LanguageSwitcher";
